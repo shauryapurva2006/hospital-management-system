@@ -1,6 +1,4 @@
-Hospital Management System
-C++
-License
+*Hospital Management System*
 
 A comprehensive console-based Hospital Management System developed in C++ that demonstrates Object-Oriented Programming principles through patient, doctor, and appointment management.
 
@@ -364,3 +362,4 @@ Create a graphical user interface (GUI)
 
 📝 License
 This project is licensed under the MIT License - see the LICENSE file for details.
+
