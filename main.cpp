@@ -3,7 +3,6 @@
 #include <vector>
 using namespace std;
 
-// -------------------- Person Class --------------------
 class Person {
 protected:
     string name;
@@ -13,7 +12,7 @@ protected:
 public:
     void inputPerson() {
         cout << "Enter Name: ";
-        getline(cin >> ws, name); // ws clears whitespace
+        getline(cin >> ws, name); 
         cout << "Enter Age: ";
         cin >> age;
         cout << "Enter Gender: ";
@@ -29,7 +28,6 @@ public:
     string getName() const { return name; }
 };
 
-// -------------------- Patient Class --------------------
 class Patient : public Person {
 private:
     string disease;
@@ -55,7 +53,6 @@ public:
     int getPatientID() const { return patientID; }
 };
 
-// -------------------- Doctor Class --------------------
 class Doctor : public Person {
 private:
     string specialization;
@@ -81,7 +78,6 @@ public:
     int getDoctorID() const { return doctorID; }
 };
 
-// -------------------- Appointment Class --------------------
 class Appointment {
 private:
     int patientID;
@@ -107,8 +103,7 @@ public:
     }
 };
 
-// -------------------- Main Function --------------------
-int main() {
+    int main() {
     vector<Patient> patients;
     vector<Doctor> doctors;
     vector<Appointment> appointments;
@@ -168,4 +163,5 @@ int main() {
     } while (choice != 0);
 
     return 0;
+
 }
